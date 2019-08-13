@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65EC407B9124C1BD1EF75995 /* Pods_LiquidEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0E1542D3F34F4653B92186 /* Pods_LiquidEye.framework */; };
+		F131212922FE8695005828F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F131212822FE8695005828F8 /* AppDelegate.swift */; };
+		F131212B22FE8695005828F8 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F131212A22FE8695005828F8 /* InitialViewController.swift */; };
+		F131212D22FE8698005828F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F131212C22FE8698005828F8 /* Assets.xcassets */; };
+		F131213022FE8698005828F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F131212E22FE8698005828F8 /* Main.storyboard */; };
+		F15322FF22FF3197009AB873 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15322FE22FF3197009AB873 /* WindowController.swift */; };
+		F153230122FFE487009AB873 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153230022FFE487009AB873 /* Timer.swift */; };
+		F1574C1F22FF1027001FB1CE /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C1D22FF1027001FB1CE /* InstructionViewController.swift */; };
+		F1574C2222FF10B1001FB1CE /* HealthInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2122FF10B1001FB1CE /* HealthInfoViewController.swift */; };
+		F1574C2422FF10EE001FB1CE /* InProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2322FF10EE001FB1CE /* InProgressViewController.swift */; };
+		F1574C2722FF1130001FB1CE /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2522FF1130001FB1CE /* DoneViewController.swift */; };
+		F1574C2A22FF1188001FB1CE /* BackToWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2922FF1188001FB1CE /* BackToWorkViewController.swift */; };
+		F1ABE55023018F2900F9762B /* beep.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE54F23018F2900F9762B /* beep.m4a */; };
+		F1ABE55323019C8400F9762B /* man.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE55123019C8400F9762B /* man.gif */; };
+		F1ABE55423019C8400F9762B /* woman.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE55223019C8400F9762B /* woman.gif */; };
+		F1ABE5562301A30800F9762B /* robot.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE5552301A30700F9762B /* robot.gif */; };
+		F1ABE55E2301A9F300F9762B /* MidPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABE55D2301A9F300F9762B /* MidPopupViewController.swift */; };
+		F1ABE5602301AE0000F9762B /* MidPopupWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABE55F2301AE0000F9762B /* MidPopupWindowController.swift */; };
+		F1ABE5632301B17600F9762B /* FullPopupWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABE5612301B17600F9762B /* FullPopupWindowController.swift */; };
+		F1ABE5642301B17600F9762B /* FullPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABE5622301B17600F9762B /* FullPopupViewController.swift */; };
+		F1D5D9D922FE8FD80038610B /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D5D9D822FE8FD80038610B /* PreferenceViewController.swift */; };
+		F1D5D9DB22FEE11E0038610B /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D5D9DA22FEE11E0038610B /* DataStructure.swift */; };
+		F1FF1A8E2301B3CF00B98DBC /* SmallPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1A8C2301B3CF00B98DBC /* SmallPopupViewController.swift */; };
+		F1FF1A912301B40700B98DBC /* SmallPopupWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF1A902301B40700B98DBC /* SmallPopupWindowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F0E1542D3F34F4653B92186 /* Pods_LiquidEye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CF8FEF7ADD82AFA137DA70 /* Pods-LiquidEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidEye.debug.xcconfig"; path = "Target Support Files/Pods-LiquidEye/Pods-LiquidEye.debug.xcconfig"; sourceTree = "<group>"; };
+		79A3E87BFEF285D230AA1944 /* Pods-LiquidEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiquidEye.release.xcconfig"; path = "Target Support Files/Pods-LiquidEye/Pods-LiquidEye.release.xcconfig"; sourceTree = "<group>"; };
+		F131212522FE8695005828F8 /* LiquidEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F131212822FE8695005828F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F131212A22FE8695005828F8 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		F131212C22FE8698005828F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F131212F22FE8698005828F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F131213122FE8698005828F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F131213222FE8698005828F8 /* LiquidEye.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiquidEye.entitlements; sourceTree = "<group>"; };
+		F15322FE22FF3197009AB873 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/WindowController.swift; sourceTree = "<group>"; };
+		F153230022FFE487009AB873 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/Timer.swift; sourceTree = "<group>"; };
+		F1574C1D22FF1027001FB1CE /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructionViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/InstructionViewController.swift; sourceTree = "<group>"; };
+		F1574C2122FF10B1001FB1CE /* HealthInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthInfoViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/HealthInfoViewController.swift; sourceTree = "<group>"; };
+		F1574C2322FF10EE001FB1CE /* InProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressViewController.swift; sourceTree = "<group>"; };
+		F1574C2522FF1130001FB1CE /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		F1574C2922FF1188001FB1CE /* BackToWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackToWorkViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/BackToWorkViewController.swift; sourceTree = "<group>"; };
+		F1ABE54F23018F2900F9762B /* beep.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep.m4a; sourceTree = "<group>"; };
+		F1ABE55123019C8400F9762B /* man.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = man.gif; sourceTree = "<group>"; };
+		F1ABE55223019C8400F9762B /* woman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = woman.gif; sourceTree = "<group>"; };
+		F1ABE5552301A30700F9762B /* robot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = robot.gif; sourceTree = "<group>"; };
+		F1ABE55D2301A9F300F9762B /* MidPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MidPopupViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/MidPopupViewController.swift; sourceTree = "<group>"; };
+		F1ABE55F2301AE0000F9762B /* MidPopupWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidPopupWindowController.swift; sourceTree = "<group>"; };
+		F1ABE5612301B17600F9762B /* FullPopupWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPopupWindowController.swift; sourceTree = "<group>"; };
+		F1ABE5622301B17600F9762B /* FullPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPopupViewController.swift; sourceTree = "<group>"; };
+		F1D5D9D822FE8FD80038610B /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		F1D5D9DA22FEE11E0038610B /* DataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataStructure.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/DataStructure.swift; sourceTree = "<group>"; };
+		F1FF1A8C2301B3CF00B98DBC /* SmallPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallPopupViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/SmallPopupViewController.swift; sourceTree = "<group>"; };
+		F1FF1A902301B40700B98DBC /* SmallPopupWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallPopupWindowController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/SmallPopupWindowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F131212222FE8695005828F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EC407B9124C1BD1EF75995 /* Pods_LiquidEye.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41BD3DD829F2F9ABDF52AF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F0E1542D3F34F4653B92186 /* Pods_LiquidEye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76AFB2926B63656E455ED583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24CF8FEF7ADD82AFA137DA70 /* Pods-LiquidEye.debug.xcconfig */,
+				79A3E87BFEF285D230AA1944 /* Pods-LiquidEye.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F131211C22FE8695005828F8 = {
+			isa = PBXGroup;
+			children = (
+				F131212722FE8695005828F8 /* LiquidEye */,
+				F131212622FE8695005828F8 /* Products */,
+				76AFB2926B63656E455ED583 /* Pods */,
+				41BD3DD829F2F9ABDF52AF44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F131212622FE8695005828F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F131212522FE8695005828F8 /* LiquidEye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F131212722FE8695005828F8 /* LiquidEye */ = {
+			isa = PBXGroup;
+			children = (
+				F131212822FE8695005828F8 /* AppDelegate.swift */,
+				F131212A22FE8695005828F8 /* InitialViewController.swift */,
+				F15322FE22FF3197009AB873 /* WindowController.swift */,
+				F1574C2122FF10B1001FB1CE /* HealthInfoViewController.swift */,
+				F1574C1D22FF1027001FB1CE /* InstructionViewController.swift */,
+				F1574C2322FF10EE001FB1CE /* InProgressViewController.swift */,
+				F1574C2922FF1188001FB1CE /* BackToWorkViewController.swift */,
+				F1ABE55D2301A9F300F9762B /* MidPopupViewController.swift */,
+				F1FF1A8C2301B3CF00B98DBC /* SmallPopupViewController.swift */,
+				F1FF1A902301B40700B98DBC /* SmallPopupWindowController.swift */,
+				F1ABE55F2301AE0000F9762B /* MidPopupWindowController.swift */,
+				F1ABE5622301B17600F9762B /* FullPopupViewController.swift */,
+				F1ABE5612301B17600F9762B /* FullPopupWindowController.swift */,
+				F1574C2522FF1130001FB1CE /* DoneViewController.swift */,
+				F153230022FFE487009AB873 /* Timer.swift */,
+				F1D5D9D822FE8FD80038610B /* PreferenceViewController.swift */,
+				F1ABE5552301A30700F9762B /* robot.gif */,
+				F1ABE55123019C8400F9762B /* man.gif */,
+				F1ABE55223019C8400F9762B /* woman.gif */,
+				F1D5D9DA22FEE11E0038610B /* DataStructure.swift */,
+				F1ABE54F23018F2900F9762B /* beep.m4a */,
+				F131212C22FE8698005828F8 /* Assets.xcassets */,
+				F131212E22FE8698005828F8 /* Main.storyboard */,
+				F131213122FE8698005828F8 /* Info.plist */,
+				F131213222FE8698005828F8 /* LiquidEye.entitlements */,
+			);
+			path = LiquidEye;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F131212422FE8695005828F8 /* LiquidEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F131213522FE8698005828F8 /* Build configuration list for PBXNativeTarget "LiquidEye" */;
+			buildPhases = (
+				753D35D2FA9CA30C1AD0AE0E /* [CP] Check Pods Manifest.lock */,
+				F131212122FE8695005828F8 /* Sources */,
+				F131212222FE8695005828F8 /* Frameworks */,
+				F131212322FE8695005828F8 /* Resources */,
+				189BC4BC62AB73F24C70265D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquidEye;
+			productName = LiquidEye;
+			productReference = F131212522FE8695005828F8 /* LiquidEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F131211D22FE8695005828F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = isc;
+				TargetAttributes = {
+					F131212422FE8695005828F8 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = F131212022FE8695005828F8 /* Build configuration list for PBXProject "LiquidEye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F131211C22FE8695005828F8;
+			productRefGroup = F131212622FE8695005828F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F131212422FE8695005828F8 /* LiquidEye */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F131212322FE8695005828F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ABE55423019C8400F9762B /* woman.gif in Resources */,
+				F131212D22FE8698005828F8 /* Assets.xcassets in Resources */,
+				F1ABE55023018F2900F9762B /* beep.m4a in Resources */,
+				F1ABE5562301A30800F9762B /* robot.gif in Resources */,
+				F131213022FE8698005828F8 /* Main.storyboard in Resources */,
+				F1ABE55323019C8400F9762B /* man.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		189BC4BC62AB73F24C70265D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiquidEye/Pods-LiquidEye-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiquidEye/Pods-LiquidEye-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiquidEye/Pods-LiquidEye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		753D35D2FA9CA30C1AD0AE0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiquidEye-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F131212122FE8695005828F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF1A912301B40700B98DBC /* SmallPopupWindowController.swift in Sources */,
+				F1574C2722FF1130001FB1CE /* DoneViewController.swift in Sources */,
+				F15322FF22FF3197009AB873 /* WindowController.swift in Sources */,
+				F1ABE5642301B17600F9762B /* FullPopupViewController.swift in Sources */,
+				F1574C1F22FF1027001FB1CE /* InstructionViewController.swift in Sources */,
+				F1574C2422FF10EE001FB1CE /* InProgressViewController.swift in Sources */,
+				F1FF1A8E2301B3CF00B98DBC /* SmallPopupViewController.swift in Sources */,
+				F1D5D9D922FE8FD80038610B /* PreferenceViewController.swift in Sources */,
+				F1ABE5602301AE0000F9762B /* MidPopupWindowController.swift in Sources */,
+				F1574C2A22FF1188001FB1CE /* BackToWorkViewController.swift in Sources */,
+				F1ABE5632301B17600F9762B /* FullPopupWindowController.swift in Sources */,
+				F1574C2222FF10B1001FB1CE /* HealthInfoViewController.swift in Sources */,
+				F1D5D9DB22FEE11E0038610B /* DataStructure.swift in Sources */,
+				F1ABE55E2301A9F300F9762B /* MidPopupViewController.swift in Sources */,
+				F131212B22FE8695005828F8 /* InitialViewController.swift in Sources */,
+				F153230122FFE487009AB873 /* Timer.swift in Sources */,
+				F131212922FE8695005828F8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F131212E22FE8698005828F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F131212F22FE8698005828F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F131213322FE8698005828F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F131213422FE8698005828F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F131213622FE8698005828F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CF8FEF7ADD82AFA137DA70 /* Pods-LiquidEye.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiquidEye/LiquidEye.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CJG8NYLG53;
+				INFOPLIST_FILE = LiquidEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = isc.snu.LiquidEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F131213722FE8698005828F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A3E87BFEF285D230AA1944 /* Pods-LiquidEye.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiquidEye/LiquidEye.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CJG8NYLG53;
+				INFOPLIST_FILE = LiquidEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = isc.snu.LiquidEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F131212022FE8695005828F8 /* Build configuration list for PBXProject "LiquidEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F131213322FE8698005828F8 /* Debug */,
+				F131213422FE8698005828F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F131213522FE8698005828F8 /* Build configuration list for PBXNativeTarget "LiquidEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F131213622FE8698005828F8 /* Debug */,
+				F131213722FE8698005828F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F131211D22FE8695005828F8 /* Project object */;
+}
