@@ -10,8 +10,19 @@ import Cocoa
 
 class InitialViewController: NSViewController {
 
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if #available(OSX 10.12, *) {
+            timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in
+                switchView(id: "InProgressViewController", self)
+            })
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func viewDidAppear() {
@@ -24,6 +35,8 @@ class InitialViewController: NSViewController {
     }
 
     @IBAction func click(_ sender: Any) {
+        saveTodayProgress(isTotal: false)
+        sendClick(button: "quit", quitStatus: "initial")
         switchView(id: "InProgressViewController", self)
     }
     @IBAction func quitClicked(_ sender: NSButton) {

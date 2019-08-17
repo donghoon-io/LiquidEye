@@ -13,9 +13,36 @@ class InProgressViewController: NSViewController {
     
     @IBOutlet weak var inProgressLabel: NSTextField!
     @IBOutlet weak var timeLabel: NSTextField!
+    @IBOutlet weak var nextButton: NSButton!
+    @IBAction func nextClicked(_ sender: NSButton) {
+        switch (preset.isAccomplishment, preset.isCompliment) {
+        case (true, true):
+            switchView(id: "BackToWorkViewController", self)
+        case (true, false):
+            switchView(id: "BackToWorkViewController", self)
+        case (false, true):
+            switchView(id: "DoneViewController", self)
+        default:
+            self.view.window?.close()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        switch (preset.isAccomplishment, preset.isCompliment) {
+        case (false, false):
+            nextButton.title = "휴식 끝내기"
+        default:
+            nextButton.title = "다음"
+        }
+        
+        if preset.isAccomplishment && !preset.isCompliment {
+            nextButton.title = "휴식 끝내기"
+        } else {
+            nextButton.title = "다음"
+        }
+        
         switch preset.character {
         case 0:
             imageView.image = NSImage(named: "man")
@@ -24,7 +51,8 @@ class InProgressViewController: NSViewController {
         case 2:
             imageView.image = NSImage(named: "robot")
         default:
-            imageView.image = NSImage()        }
+            imageView.image = NSImage()
+        }
         
         switch preset.frequency {
         case 0:
@@ -47,7 +75,7 @@ class InProgressViewController: NSViewController {
         let seconds = time % 60
         timeLabel.stringValue = String(format:"%02i:%02i:%02i", hours, minutes, seconds)
         
-        messageTimer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: (#selector(updateMessage)), userInfo: nil, repeats: true)
+        messageTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: (#selector(updateMessage)), userInfo: nil, repeats: true)
 
     }
     override func viewDidAppear() {
@@ -60,13 +88,19 @@ class InProgressViewController: NSViewController {
         let seconds = time % 60
         timeLabel.stringValue = String(format:"%02i:%02i:%02i", hours, minutes, seconds)
         if time == 0 {
-            switchView(id: "DoneViewController", self)
+            nextButton.isHidden = false
+            messageTimer.invalidate()
+            timer.invalidate()
+            
+            if preset.isBeep {
+                NSSound(named: "beep.m4a")?.play()
+            }
         }
     }
     
     @objc func updateMessage() {
         inProgressLabel.stringValue = messageArray[currentSecond % messageArray.count]
-        currentSecond += 0
+        currentSecond += 1
     }
     
     override var representedObject: Any? {
@@ -75,6 +109,7 @@ class InProgressViewController: NSViewController {
         }
     }
     @IBAction func quitClicked(_ sender: NSButton) {
+        sendClick(button: "quit", quitStatus: "inprogress")
         self.view.window?.windowController?.close()
     }
 }

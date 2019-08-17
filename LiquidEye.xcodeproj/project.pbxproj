@@ -19,6 +19,7 @@
 		F1574C2422FF10EE001FB1CE /* InProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2322FF10EE001FB1CE /* InProgressViewController.swift */; };
 		F1574C2722FF1130001FB1CE /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2522FF1130001FB1CE /* DoneViewController.swift */; };
 		F1574C2A22FF1188001FB1CE /* BackToWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1574C2922FF1188001FB1CE /* BackToWorkViewController.swift */; };
+		F1AA60452304570800E40510 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA60442304570800E40510 /* FeedbackViewController.swift */; };
 		F1ABE55023018F2900F9762B /* beep.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE54F23018F2900F9762B /* beep.m4a */; };
 		F1ABE55323019C8400F9762B /* man.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE55123019C8400F9762B /* man.gif */; };
 		F1ABE55423019C8400F9762B /* woman.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1ABE55223019C8400F9762B /* woman.gif */; };
@@ -51,6 +52,7 @@
 		F1574C2322FF10EE001FB1CE /* InProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressViewController.swift; sourceTree = "<group>"; };
 		F1574C2522FF1130001FB1CE /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		F1574C2922FF1188001FB1CE /* BackToWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackToWorkViewController.swift; path = ../../../../../../System/Volumes/Data/Users/hooniemac/Documents/GitHub/LiquidEye/LiquidEye/BackToWorkViewController.swift; sourceTree = "<group>"; };
+		F1AA60442304570800E40510 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		F1ABE54F23018F2900F9762B /* beep.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = beep.m4a; sourceTree = "<group>"; };
 		F1ABE55123019C8400F9762B /* man.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = man.gif; sourceTree = "<group>"; };
 		F1ABE55223019C8400F9762B /* woman.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = woman.gif; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				F1FF1A902301B40700B98DBC /* SmallPopupWindowController.swift */,
 				F1ABE55F2301AE0000F9762B /* MidPopupWindowController.swift */,
 				F1ABE5622301B17600F9762B /* FullPopupViewController.swift */,
+				F1AA60442304570800E40510 /* FeedbackViewController.swift */,
 				F1ABE5612301B17600F9762B /* FullPopupWindowController.swift */,
 				F1574C2522FF1130001FB1CE /* DoneViewController.swift */,
 				F153230022FFE487009AB873 /* Timer.swift */,
@@ -178,6 +181,11 @@
 				TargetAttributes = {
 					F131212422FE8695005828F8 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -269,6 +277,7 @@
 				F1574C1F22FF1027001FB1CE /* InstructionViewController.swift in Sources */,
 				F1574C2422FF10EE001FB1CE /* InProgressViewController.swift in Sources */,
 				F1FF1A8E2301B3CF00B98DBC /* SmallPopupViewController.swift in Sources */,
+				F1AA60452304570800E40510 /* FeedbackViewController.swift in Sources */,
 				F1D5D9D922FE8FD80038610B /* PreferenceViewController.swift in Sources */,
 				F1ABE5602301AE0000F9762B /* MidPopupWindowController.swift in Sources */,
 				F1574C2A22FF1188001FB1CE /* BackToWorkViewController.swift in Sources */,

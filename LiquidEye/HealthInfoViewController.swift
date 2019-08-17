@@ -3,6 +3,9 @@
 import Cocoa
 
 class HealthInfoViewController: NSViewController {
+    
+    var timer = Timer()
+    
     let message = [
         "빈번한 눈 휴식은 인공눈물을\n투여하는 것 보다 낫습니다",
         "잠자기 전에 수건을 이용한 스팀 마사지를 하는 것은\n당신의 안구 스트레스를 완화할 수 있어요",
@@ -20,6 +23,15 @@ class HealthInfoViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         healthLabel.stringValue = message.randomElement() ?? "빈번한 눈 휴식은 인공눈물을\n투여하는 것 보다 낫습니다"
+        
+        
+        if #available(OSX 10.12, *) {
+            timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { (timer) in
+                switchView(id: "InitialViewController", self)
+            })
+        } else {
+            // Fallback on earlier versions
+        }
     }
     override func viewDidAppear() {
         
@@ -32,10 +44,13 @@ class HealthInfoViewController: NSViewController {
         }
     }
     @IBAction func cancelClicked(_ sender: NSButton) {
+        sendClick(button: "quit", quitStatus: "healthinfo")
         self.view.window?.close()
     }
     
     @IBAction func clickNext(_ sender: NSButton) {
+        saveTodayProgress(isTotal: false)
+        sendClick(button: "next", quitStatus: "healthinfo")
         switchView(id: "InitialViewController", self)
     }
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {

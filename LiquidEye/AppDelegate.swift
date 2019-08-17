@@ -39,6 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, NSUserNot
         }
         
         print(preset)
+
+        
+        if preset.restColor == 0 {
+            ThemeManager.darkTheme.apply()
+        } else {
+            ThemeManager.lightTheme.apply()
+        }
         
         popover.behavior = .transient
         popover.animates = true
@@ -75,11 +82,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, NSUserNot
             default:
                 if preset.explanationFrequency == 0 {
                     self.openVC(identifier: "InstructionViewController")
+                    saveTodayProgress(isTotal: true)
+                    updateTodayQuantity(isAchieved: false)
                 } else {
                     if preset.isHealthInfo {
                         self.openVC(identifier: "HealthInfoViewController")
+                        saveTodayProgress(isTotal: true)
+                        updateTodayQuantity(isAchieved: false)
                     } else {
                         self.openVC(identifier: "InitialViewController")
+                        saveTodayProgress(isTotal: true)
+                        updateTodayQuantity(isAchieved: false)
                     }
                 }
             }
@@ -100,11 +113,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate, NSUserNot
     @objc func handlePause(_ notification: Notification) {
         DispatchQueue.main.async {
             if preset.explanationFrequency == 0 {
+                saveTodayProgress(isTotal: true)
+                updateTodayQuantity(isAchieved: false)
                 self.openVC(identifier: "InstructionViewController")
             } else {
                 if preset.isHealthInfo {
+                    saveTodayProgress(isTotal: true)
+                    updateTodayQuantity(isAchieved: false)
                     self.openVC(identifier: "HealthInfoViewController")
                 } else {
+                    saveTodayProgress(isTotal: true)
+                    updateTodayQuantity(isAchieved: false)
                     self.openVC(identifier: "InitialViewController")
                 }
             }

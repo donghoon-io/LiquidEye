@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="btv-hS-bSr">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="R3H-Rv-mMP">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
@@ -909,8 +909,8 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-Uf-D0u">
-                                <rect key="frame" x="294" y="608" width="71" height="18"/>
-                                <buttonCell key="cell" type="check" title="시각 효과" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="74q-SK-fRV">
+                                <rect key="frame" x="309" y="608" width="56" height="18"/>
+                                <buttonCell key="cell" type="check" title="이미지" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="74q-SK-fRV">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" usesAppearanceFont="YES"/>
                                 </buttonCell>
@@ -1319,6 +1319,33 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DpI-kd-do8">
+                                <rect key="frame" x="294" y="752" width="38" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="식별자" id="3RA-7x-v7s">
+                                    <font key="font" size="13" name=".AppleSDGothicNeoI-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mVe-da-5bE">
+                                <rect key="frame" x="345" y="750" width="40" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="dpP-Gu-Jwg"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="2hQ-67-ccc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="72n-8w-4tX">
+                                <rect key="frame" x="309" y="629" width="66" height="13"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="(1개 선택 필수)" id="oFn-8q-sWI">
+                                    <font key="font" metaFont="system" size="10"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="h9t-GO-PaG" firstAttribute="centerY" secondItem="dV8-aZ-ObS" secondAttribute="centerY" id="0Yy-23-KrU"/>
@@ -1336,6 +1363,7 @@
                             <constraint firstItem="OEs-nL-gtN" firstAttribute="centerY" secondItem="3E7-Ki-kqF" secondAttribute="centerY" id="3iV-9S-Ube"/>
                             <constraint firstAttribute="trailing" secondItem="fi8-Cd-ovg" secondAttribute="trailing" constant="30" id="47K-r9-zAt"/>
                             <constraint firstItem="2BT-p6-pCo" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="4Sk-SC-2ng"/>
+                            <constraint firstItem="h0N-1o-IGU" firstAttribute="centerY" secondItem="mVe-da-5bE" secondAttribute="centerY" id="4dQ-aP-yLN"/>
                             <constraint firstItem="6Hn-8I-Afc" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="5Cw-PH-mgg"/>
                             <constraint firstItem="lWj-4R-rVC" firstAttribute="centerY" secondItem="Xhi-Zh-GYI" secondAttribute="centerY" id="6vT-yJ-3xk"/>
                             <constraint firstItem="gQ9-hb-lfV" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="8v8-Kf-6jl"/>
@@ -1349,6 +1377,7 @@
                             <constraint firstItem="UwN-QP-0Ot" firstAttribute="leading" secondItem="gQ9-hb-lfV" secondAttribute="trailing" constant="10" id="DFM-p9-AY2"/>
                             <constraint firstItem="e7b-Io-hpz" firstAttribute="leading" secondItem="Xhi-Zh-GYI" secondAttribute="trailing" constant="10" id="E1E-Aq-jLD"/>
                             <constraint firstItem="Xcl-Uc-baL" firstAttribute="leading" secondItem="e7b-Io-hpz" secondAttribute="trailing" constant="15" id="ENT-zn-lzs"/>
+                            <constraint firstItem="bOS-Uf-D0u" firstAttribute="leading" secondItem="72n-8w-4tX" secondAttribute="leading" id="Eko-l0-8au"/>
                             <constraint firstItem="eMW-fI-qw7" firstAttribute="centerY" secondItem="kFa-W9-ybS" secondAttribute="centerY" id="EqD-59-Qpp"/>
                             <constraint firstItem="LSA-Aa-5fR" firstAttribute="centerY" secondItem="AYJ-h8-2lZ" secondAttribute="centerY" id="FtC-V3-3kN"/>
                             <constraint firstItem="3E7-Ki-kqF" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="GHa-Ht-LQ9"/>
@@ -1372,14 +1401,17 @@
                             <constraint firstItem="fi8-Cd-ovg" firstAttribute="top" secondItem="ub0-Ke-F1L" secondAttribute="top" id="R4D-iK-nZK"/>
                             <constraint firstItem="dwu-7N-31b" firstAttribute="leading" secondItem="bOS-Uf-D0u" secondAttribute="trailing" constant="5" id="SIQ-y4-bsq"/>
                             <constraint firstItem="OEs-nL-gtN" firstAttribute="leading" secondItem="nPU-Uf-kFv" secondAttribute="trailing" constant="15" id="SQq-fa-eTm"/>
+                            <constraint firstItem="bOS-Uf-D0u" firstAttribute="top" secondItem="72n-8w-4tX" secondAttribute="bottom" constant="5" id="Sf8-FP-1DG"/>
                             <constraint firstItem="lWj-4R-rVC" firstAttribute="leading" secondItem="Xcl-Uc-baL" secondAttribute="trailing" constant="15" id="UUK-Ih-FUB"/>
                             <constraint firstItem="h9t-GO-PaG" firstAttribute="leading" secondItem="Dat-zi-R6v" secondAttribute="trailing" constant="15" id="VBc-Ih-npD"/>
+                            <constraint firstItem="mVe-da-5bE" firstAttribute="leading" secondItem="DpI-kd-do8" secondAttribute="trailing" constant="15" id="VXp-QJ-72Q"/>
                             <constraint firstItem="pSa-MR-dT8" firstAttribute="leading" secondItem="zOW-Ab-oZ6" secondAttribute="trailing" constant="10" id="W4x-YM-BZM"/>
                             <constraint firstItem="ub0-Ke-F1L" firstAttribute="top" secondItem="BML-gs-q3c" secondAttribute="bottom" constant="10" id="WZ9-2s-03x"/>
                             <constraint firstItem="Xqv-f0-K7A" firstAttribute="centerY" secondItem="Cad-r1-1zY" secondAttribute="centerY" id="Wlq-FX-8j1"/>
                             <constraint firstItem="Y9Q-nn-e1O" firstAttribute="centerY" secondItem="kFa-W9-ybS" secondAttribute="centerY" id="YRB-1t-VPg"/>
                             <constraint firstItem="6Hn-8I-Afc" firstAttribute="top" secondItem="7KZ-Ne-ZXb" secondAttribute="bottom" constant="30" id="YYo-Sx-gbC"/>
                             <constraint firstItem="mC9-De-xxn" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="blE-Cy-Pcq"/>
+                            <constraint firstItem="h0N-1o-IGU" firstAttribute="leading" secondItem="mVe-da-5bE" secondAttribute="trailing" constant="30" id="c0v-5f-t2T"/>
                             <constraint firstItem="98v-Z1-q7f" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="c24-lw-DDN"/>
                             <constraint firstItem="JC6-7l-8wN" firstAttribute="centerY" secondItem="dV8-aZ-ObS" secondAttribute="centerY" id="cZr-zJ-LV4"/>
                             <constraint firstItem="zOW-Ab-oZ6" firstAttribute="top" secondItem="utk-bc-8V7" secondAttribute="bottom" constant="10" id="ccJ-4o-GBP"/>
@@ -1397,6 +1429,7 @@
                             <constraint firstItem="gCF-XP-HGC" firstAttribute="leading" secondItem="BML-gs-q3c" secondAttribute="leading" id="hdI-DN-VGI"/>
                             <constraint firstItem="H0Y-1j-JQV" firstAttribute="leading" secondItem="Cad-r1-1zY" secondAttribute="trailing" constant="10" id="i9V-GP-6OA"/>
                             <constraint firstItem="bOS-Uf-D0u" firstAttribute="centerY" secondItem="6Hn-8I-Afc" secondAttribute="centerY" id="ik6-BX-85X"/>
+                            <constraint firstItem="mVe-da-5bE" firstAttribute="centerY" secondItem="DpI-kd-do8" secondAttribute="centerY" id="j7R-Lu-5np"/>
                             <constraint firstItem="Xhi-Zh-GYI" firstAttribute="top" secondItem="0H3-4Z-iQd" secondAttribute="bottom" constant="10" id="kps-Wk-Did"/>
                             <constraint firstAttribute="trailing" secondItem="h0N-1o-IGU" secondAttribute="trailing" constant="15" id="lR3-im-pZ2"/>
                             <constraint firstItem="dwu-7N-31b" firstAttribute="centerY" secondItem="6Hn-8I-Afc" secondAttribute="centerY" id="lzD-rA-PmP"/>
@@ -1452,6 +1485,7 @@
                         <outlet property="frequencyButton0" destination="ub0-Ke-F1L" id="N8Y-x7-bQY"/>
                         <outlet property="frequencyButton1" destination="fi8-Cd-ovg" id="arR-dM-Mic"/>
                         <outlet property="frequencyButton2" destination="kFa-W9-ybS" id="piG-Um-qrQ"/>
+                        <outlet property="idField" destination="mVe-da-5bE" id="FOo-dy-e8H"/>
                         <outlet property="intervalTextField" destination="gIf-nF-DZK" id="uFB-35-6Pc"/>
                         <outlet property="messageButton" destination="dwu-7N-31b" id="el3-9N-JEb"/>
                         <outlet property="notiChooseButton" destination="tDi-m8-lED" id="jFf-ae-0A2"/>
@@ -1531,28 +1565,45 @@
                                 </connections>
                             </button>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Rj-Zd-3n2">
-                                <rect key="frame" x="160" y="-6" width="300" height="299"/>
+                                <rect key="frame" x="-40" y="-106" width="500" height="499"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Erc-4B-MwJ"/>
+                                    <constraint firstAttribute="width" constant="500" id="Erc-4B-MwJ"/>
                                     <constraint firstAttribute="width" secondItem="0Rj-Zd-3n2" secondAttribute="height" constant="1" id="bPv-KH-7SV"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="man" id="W9p-gP-JzJ"/>
                             </imageView>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xyE-4r-KzT">
+                                <rect key="frame" x="64" y="11" width="352" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Ec-3w-OIO"/>
+                                    <constraint firstAttribute="width" constant="350" id="tzY-Lh-oYE"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="다음" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rJe-DJ-fMm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="40" name=".AppleSDGothicNeoI-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextClicked:" target="Yaj-MF-6QQ" id="0rw-PF-hOo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="qPN-8S-djf" firstAttribute="centerX" secondItem="6f7-1v-gas" secondAttribute="centerX" id="2Rx-RY-U3A"/>
+                            <constraint firstItem="xyE-4r-KzT" firstAttribute="centerX" secondItem="GFN-Bv-zLF" secondAttribute="centerX" id="84S-4F-jCf"/>
                             <constraint firstItem="qPN-8S-djf" firstAttribute="top" secondItem="6f7-1v-gas" secondAttribute="bottom" constant="30" id="EuJ-mx-hJ5"/>
                             <constraint firstAttribute="trailing" secondItem="j8V-uW-u3q" secondAttribute="trailing" constant="30" id="JYT-kF-cDo"/>
                             <constraint firstItem="qPN-8S-djf" firstAttribute="centerX" secondItem="GFN-Bv-zLF" secondAttribute="centerX" id="gGo-nl-xHa"/>
                             <constraint firstItem="qPN-8S-djf" firstAttribute="top" secondItem="GFN-Bv-zLF" secondAttribute="centerY" constant="-30" id="jgA-VV-WRF"/>
                             <constraint firstAttribute="trailing" secondItem="0Rj-Zd-3n2" secondAttribute="trailing" constant="20" id="mu0-FN-BMu"/>
                             <constraint firstItem="0Rj-Zd-3n2" firstAttribute="centerY" secondItem="GFN-Bv-zLF" secondAttribute="centerY" id="o4u-xf-PZ2"/>
+                            <constraint firstItem="xyE-4r-KzT" firstAttribute="top" secondItem="qPN-8S-djf" secondAttribute="bottom" constant="50" id="obB-6z-8cf"/>
                             <constraint firstItem="j8V-uW-u3q" firstAttribute="top" secondItem="GFN-Bv-zLF" secondAttribute="top" constant="30" id="wbp-Qt-SVM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="0Rj-Zd-3n2" id="fka-0n-20g"/>
                         <outlet property="inProgressLabel" destination="6f7-1v-gas" id="Z5T-bf-5BB"/>
+                        <outlet property="nextButton" destination="xyE-4r-KzT" id="LV5-dj-OjG"/>
                         <outlet property="timeLabel" destination="qPN-8S-djf" id="ypn-Is-9dZ"/>
                     </connections>
                 </viewController>
@@ -1568,16 +1619,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="286"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Pb-gt-RuY">
-                                <rect key="frame" x="133" y="113" width="215" height="60"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="00:00:00" id="rl2-H4-tNB">
-                                    <font key="font" metaFont="system" size="50"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="955-tR-TOa">
-                                <rect key="frame" x="93" y="203" width="294" height="50"/>
+                                <rect key="frame" x="93" y="143" width="294" height="50"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="정말 잘했어요!" id="UnG-X8-aQ3">
                                     <font key="font" size="50" name=".AppleSDGothicNeoI-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1585,12 +1628,12 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-8p-g9v">
-                                <rect key="frame" x="64" y="11" width="352" height="53"/>
+                                <rect key="frame" x="64" y="48" width="352" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HbI-9n-e4v"/>
                                     <constraint firstAttribute="width" constant="350" id="joL-7U-jsF"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="다음" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N4l-nB-mH0">
+                                <buttonCell key="cell" type="squareTextured" title="휴식 끝내기" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N4l-nB-mH0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="40" name=".AppleSDGothicNeoI-Regular"/>
                                 </buttonCell>
@@ -1600,12 +1643,10 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="1Pb-gt-RuY" firstAttribute="centerX" secondItem="955-tR-TOa" secondAttribute="centerX" id="Mt1-MW-nG8"/>
-                            <constraint firstItem="1Pb-gt-RuY" firstAttribute="top" secondItem="955-tR-TOa" secondAttribute="bottom" constant="30" id="XDA-Ei-g4I"/>
-                            <constraint firstItem="1Pb-gt-RuY" firstAttribute="top" secondItem="lri-m7-r8g" secondAttribute="centerY" constant="-30" id="ZRt-6j-vLI"/>
-                            <constraint firstItem="1Pb-gt-RuY" firstAttribute="centerX" secondItem="lri-m7-r8g" secondAttribute="centerX" id="cG5-e8-b7V"/>
+                            <constraint firstItem="955-tR-TOa" firstAttribute="centerX" secondItem="lri-m7-r8g" secondAttribute="centerX" id="2Hm-Jj-ahn"/>
+                            <constraint firstItem="955-tR-TOa" firstAttribute="bottom" secondItem="lri-m7-r8g" secondAttribute="centerY" id="A2O-h5-sMa"/>
+                            <constraint firstAttribute="bottom" secondItem="4Kf-8p-g9v" secondAttribute="bottom" constant="50" id="PGm-84-IfH"/>
                             <constraint firstItem="4Kf-8p-g9v" firstAttribute="centerX" secondItem="lri-m7-r8g" secondAttribute="centerX" id="fDY-af-SFk"/>
-                            <constraint firstItem="4Kf-8p-g9v" firstAttribute="top" secondItem="1Pb-gt-RuY" secondAttribute="bottom" constant="50" id="jNT-YU-Ncp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1621,24 +1662,24 @@
                 <customObject id="VGU-Os-SeD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="BackToWorkViewController" showSeguePresentationStyle="single" id="it0-gF-BgS" customClass="BackToWorkViewController" customModule="LiquidEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" identifier="BackToWorkViewController" id="t3d-Rm-YRz">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="286"/>
+                        <rect key="frame" x="0.0" y="0.0" width="781" height="526"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tjU-kj-jtH">
-                                <rect key="frame" x="-137" y="143" width="754" height="120"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Your total rest today is equivalent to 30 minutes of eye massage." id="YeW-zA-rXf">
-                                    <font key="font" metaFont="system" size="50"/>
+                                <rect key="frame" x="29" y="263" width="723" height="100"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="오늘 당신의 휴식량은 30분 동안 눈 마사지를 직접 받은 것과 유사해요" id="YeW-zA-rXf">
+                                    <font key="font" size="50" name=".AppleSDGothicNeoI-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3mR-vG-wPw">
-                                <rect key="frame" x="64" y="48" width="352" height="53"/>
+                                <rect key="frame" x="215" y="48" width="352" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="5Hn-Pv-97f"/>
                                     <constraint firstAttribute="height" constant="50" id="ThC-ko-Rdc"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="휴식 끝내기" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="irm-q1-lVE">
+                                <buttonCell key="cell" type="squareTextured" title="다음" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="irm-q1-lVE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="40" name=".AppleSDGothicNeoI-Regular"/>
                                 </buttonCell>
@@ -1646,17 +1687,329 @@
                                     <action selector="click:" target="it0-gF-BgS" id="uDA-e2-tHz"/>
                                 </connections>
                             </button>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="XBX-Oi-AgX">
+                                <rect key="frame" x="91" y="150" width="600" height="60"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ezz-AA-XcY">
+                                        <rect key="frame" x="5" y="5" width="163" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="163" id="SYw-Nt-Yzu"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ezz-AA-XcY" secondAttribute="bottom" constant="5" id="8XF-Np-uo9"/>
+                                    <constraint firstItem="Ezz-AA-XcY" firstAttribute="leading" secondItem="XBX-Oi-AgX" secondAttribute="leading" constant="5" id="Aca-bt-0vx"/>
+                                    <constraint firstAttribute="width" constant="600" id="mDv-SH-bKy"/>
+                                    <constraint firstAttribute="height" constant="60" id="nHj-Dh-C25"/>
+                                    <constraint firstItem="Ezz-AA-XcY" firstAttribute="top" secondItem="XBX-Oi-AgX" secondAttribute="top" constant="5" id="nT8-Em-8h6"/>
+                                </constraints>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VxY-4W-6hB">
+                                <rect key="frame" x="714" y="150" width="105" height="60"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="60%" id="zH6-eJ-gnr">
+                                    <font key="font" metaFont="system" size="50"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-CV-GmF">
+                                <rect key="frame" x="631" y="414" width="100" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CL8-hJ-sEb"/>
+                                    <constraint firstAttribute="width" secondItem="M6B-CV-GmF" secondAttribute="height" multiplier="194:120" id="wKd-ir-F3g"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="money" id="6RA-4S-K9n"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0NV-vB-Nz9">
+                                <rect key="frame" x="652" y="344" width="58" height="60"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="10" id="4qO-3U-LOy">
+                                    <font key="font" metaFont="system" size="50"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="tjU-kj-jtH" firstAttribute="bottom" secondItem="t3d-Rm-YRz" secondAttribute="centerY" id="82H-iS-qNZ"/>
                             <constraint firstItem="3mR-vG-wPw" firstAttribute="centerX" secondItem="t3d-Rm-YRz" secondAttribute="centerX" id="EeX-FM-0C5"/>
                             <constraint firstAttribute="bottom" secondItem="3mR-vG-wPw" secondAttribute="bottom" constant="50" id="Ijg-5B-I7d"/>
+                            <constraint firstAttribute="trailing" secondItem="M6B-CV-GmF" secondAttribute="trailing" constant="50" id="R07-1a-OR1"/>
+                            <constraint firstItem="VxY-4W-6hB" firstAttribute="centerY" secondItem="XBX-Oi-AgX" secondAttribute="centerY" id="RMO-fF-UDJ"/>
+                            <constraint firstItem="M6B-CV-GmF" firstAttribute="top" secondItem="t3d-Rm-YRz" secondAttribute="top" constant="50" id="T1K-I0-oFS"/>
+                            <constraint firstItem="0NV-vB-Nz9" firstAttribute="centerX" secondItem="M6B-CV-GmF" secondAttribute="centerX" id="XDW-TK-IzP"/>
                             <constraint firstItem="tjU-kj-jtH" firstAttribute="centerX" secondItem="t3d-Rm-YRz" secondAttribute="centerX" id="Yzi-N2-sGX"/>
+                            <constraint firstItem="VxY-4W-6hB" firstAttribute="leading" secondItem="XBX-Oi-AgX" secondAttribute="trailing" constant="25" id="qbo-ox-Yb0"/>
+                            <constraint firstItem="XBX-Oi-AgX" firstAttribute="centerX" secondItem="t3d-Rm-YRz" secondAttribute="centerX" id="tIh-Zf-JhM"/>
+                            <constraint firstItem="0NV-vB-Nz9" firstAttribute="top" secondItem="M6B-CV-GmF" secondAttribute="bottom" constant="10" id="tTE-f7-qgV"/>
+                            <constraint firstItem="3mR-vG-wPw" firstAttribute="top" secondItem="XBX-Oi-AgX" secondAttribute="bottom" constant="50" id="z63-dc-A5b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="explanationLabel" destination="tjU-kj-jtH" id="wv7-oc-kPh"/>
+                        <outlet property="innerView" destination="Ezz-AA-XcY" id="2Ji-El-X7I"/>
+                        <outlet property="moneyLabel" destination="0NV-vB-Nz9" id="biK-JI-Rbh"/>
+                        <outlet property="nextButton" destination="3mR-vG-wPw" id="V4R-4N-3ex"/>
+                        <outlet property="percentLabel" destination="VxY-4W-6hB" id="rLB-R6-g8k"/>
+                        <outlet property="totView" destination="XBX-Oi-AgX" id="PSN-h8-deD"/>
+                        <outlet property="width" destination="SYw-Nt-Yzu" id="xZl-eZ-Hgi"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="624" y="1280"/>
+            <point key="canvasLocation" x="774.5" y="1400"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="q7V-og-VDG">
+            <objects>
+                <windowController storyboardIdentifier="feedbackwindow" id="F4v-C3-gVt" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="VTV-6G-Clg">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="F4v-C3-gVt" id="NZN-wz-kEp"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Zaf-du-fnB" kind="relationship" relationship="window.shadowedContentViewController" id="VMX-QO-5LZ"/>
+                    </connections>
+                </windowController>
+                <customObject id="csp-J9-Xf8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="1912"/>
+        </scene>
+        <!--피드백을 주세요-->
+        <scene sceneID="Tg0-S3-uRw">
+            <objects>
+                <viewController title="피드백을 주세요" id="Zaf-du-fnB" customClass="FeedbackViewController" customModule="LiquidEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="xJg-RR-1od">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="757"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-x1-bv7">
+                                <rect key="frame" x="28" y="720" width="248" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="휴식시간에 대한 적절성에 대해서 말씀해주세요." id="o0K-PL-AGb">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="QeS-zP-U8N">
+                                <rect key="frame" x="30" y="670" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bxc-iQ-4nv"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="설정한 시간이 적당한지 혹은 업무에 영향을 줄 정도로 길거나 혹은 짧았는지, 휴식을 취하는데 도움을 주었는지, 유용했는지  등 장단점" drawsBackground="YES" id="ZW3-e0-e87">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CFa-GC-yrz">
+                                <rect key="frame" x="28" y="546" width="385" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="휴식 알람 팝업창과 함께 나타나는 시각적 효과에 대한 경험을 말씀해주세요" id="bK4-GH-Lsv">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-NF-daS">
+                                <rect key="frame" x="30" y="496" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FOC-hb-07G"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="알람을 주는 팝업창이 적절했는지 혹은 업무에 영향을 주었는지, 휴식을 취하는데 도움을 주었는지, 유용했는지 등" drawsBackground="YES" id="CCI-1Y-Gkl">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Pf-cK-gNR">
+                                <rect key="frame" x="28" y="459" width="225" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="휴식 참여 설명에 대한 경험을 말씀해주세요" id="0hz-vQ-cY2">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="1fm-77-Da2">
+                                <rect key="frame" x="30" y="409" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xBn-iZ-otI"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="휴식을 취하는데 도움을 주었는지, 불필요 했는지 혹은 너무 자주 등장했는지 등" drawsBackground="YES" id="Ibk-He-qTZ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-Eh-lPv">
+                                <rect key="frame" x="28" y="372" width="314" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="휴식 참여 전 건강관련 정보 제공에 대한 경험을 말씀해주세요" id="z47-zc-8r4">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="qs4-TF-pEC">
+                                <rect key="frame" x="30" y="322" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NjK-GK-CEd"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="휴식을 취하는데 도움을 주었는지, 불필요했는지 등과 관련된 장단점" drawsBackground="YES" id="KNM-b9-w6I">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ppm-zJ-Abl">
+                                <rect key="frame" x="28" y="285" width="199" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="소리에 대한 경험에 대해 말씀해주세요" id="ilG-L2-He5">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Izx-gh-f06">
+                                <rect key="frame" x="30" y="235" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xoz-g2-Uha"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="소리 때문에 당황스러운 경험 혹은 불필요했는지 등" drawsBackground="YES" id="enr-aA-c1T">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="17N-1C-dEC">
+                                <rect key="frame" x="28" y="198" width="214" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="색 설정에 대한 경험에 대해 말씀해주세요" id="nX8-SN-6tT">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-QI-Uw2">
+                                <rect key="frame" x="30" y="148" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9So-oE-7C5"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="설정한 색에 대한 장단점" drawsBackground="YES" id="uYJ-LB-Or4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BqX-dW-OxM">
+                                <rect key="frame" x="28" y="111" width="358" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="피드백(휴식 후 나오는 그림과 글)과 관련된 경험에 대해 말씀해주세요" id="Kkn-tG-I3t">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-5G-VFW">
+                                <rect key="frame" x="30" y="61" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UrS-O9-Vcu"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="피드백이 도움이 되었는지, 어떤 점이 도움이 되었는지, 함께 나오는 그림이 장기적인 사용에 도움이 되는지 등" drawsBackground="YES" id="Zxj-cj-Ek6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LdN-Sc-bqY">
+                                <rect key="frame" x="382" y="13" width="74" height="32"/>
+                                <buttonCell key="cell" type="push" title="보내기" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ItS-vs-WdR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="sendClicked:" target="Zaf-du-fnB" id="aub-uE-8MB"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-mq-5f3">
+                                <rect key="frame" x="28" y="633" width="300" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="휴식을 알리는 팝업의 강제성에 대한 경험을 말씀해주세요." id="vLx-Wn-aHU">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="2Cz-Ca-bF6">
+                                <rect key="frame" x="30" y="583" width="420" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pmy-Dx-v0e"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="알람을 주는 팝업창이 적절했는지 혹은 업무에 영향을 주었는지, 휴식을 취하는데 도움을 주었는지, 유용했는지 등" drawsBackground="YES" id="nHC-8J-06A">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qs4-TF-pEC" firstAttribute="leading" secondItem="QwV-Eh-lPv" secondAttribute="leading" id="0ZK-np-bCy"/>
+                            <constraint firstItem="1fm-77-Da2" firstAttribute="leading" secondItem="2Pf-cK-gNR" secondAttribute="leading" id="0dn-f0-eki"/>
+                            <constraint firstItem="Izx-gh-f06" firstAttribute="leading" secondItem="ppm-zJ-Abl" secondAttribute="leading" id="3bu-Ha-yhf"/>
+                            <constraint firstItem="2Pf-cK-gNR" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="4YJ-1l-KZ7"/>
+                            <constraint firstItem="VIn-mq-5f3" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="5dt-c1-i0Q"/>
+                            <constraint firstAttribute="trailing" secondItem="LdN-Sc-bqY" secondAttribute="trailing" constant="30" id="63l-RU-UiY"/>
+                            <constraint firstItem="qs4-TF-pEC" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="6TB-jI-xPa"/>
+                            <constraint firstItem="6kU-QI-Uw2" firstAttribute="leading" secondItem="17N-1C-dEC" secondAttribute="leading" id="6m0-g0-Dla"/>
+                            <constraint firstItem="ppm-zJ-Abl" firstAttribute="top" secondItem="qs4-TF-pEC" secondAttribute="bottom" constant="20" id="76g-zl-1FZ"/>
+                            <constraint firstItem="QeS-zP-U8N" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="AHC-K4-COy"/>
+                            <constraint firstItem="b9d-x1-bv7" firstAttribute="leading" secondItem="xJg-RR-1od" secondAttribute="leading" constant="30" id="ArF-BT-rcS"/>
+                            <constraint firstItem="ppm-zJ-Abl" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="Bnh-tb-e2D"/>
+                            <constraint firstItem="2Cz-Ca-bF6" firstAttribute="leading" secondItem="VIn-mq-5f3" secondAttribute="leading" id="D1S-Pc-R6f"/>
+                            <constraint firstItem="BqX-dW-OxM" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="Ff1-Vm-9i6"/>
+                            <constraint firstItem="Izx-gh-f06" firstAttribute="top" secondItem="ppm-zJ-Abl" secondAttribute="bottom" constant="10" id="I6Z-nT-SXW"/>
+                            <constraint firstItem="LdN-Sc-bqY" firstAttribute="top" secondItem="gLY-5G-VFW" secondAttribute="bottom" constant="20" id="Kee-w2-HRU"/>
+                            <constraint firstItem="6kU-QI-Uw2" firstAttribute="top" secondItem="17N-1C-dEC" secondAttribute="bottom" constant="10" id="L9H-W3-UgL"/>
+                            <constraint firstItem="qs4-TF-pEC" firstAttribute="top" secondItem="QwV-Eh-lPv" secondAttribute="bottom" constant="10" id="MIX-cY-YIw"/>
+                            <constraint firstItem="gLY-5G-VFW" firstAttribute="leading" secondItem="BqX-dW-OxM" secondAttribute="leading" id="MpM-Ef-8gD"/>
+                            <constraint firstItem="QeS-zP-U8N" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="NCg-in-uQJ"/>
+                            <constraint firstItem="1fm-77-Da2" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="S9j-wv-u2A"/>
+                            <constraint firstItem="QwV-Eh-lPv" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="Sa4-bo-DtR"/>
+                            <constraint firstItem="VIn-mq-5f3" firstAttribute="top" secondItem="QeS-zP-U8N" secondAttribute="bottom" constant="20" id="Sbl-LX-mnG"/>
+                            <constraint firstItem="gLY-5G-VFW" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="TQm-hl-2rF"/>
+                            <constraint firstItem="b9d-x1-bv7" firstAttribute="top" secondItem="xJg-RR-1od" secondAttribute="top" constant="20" id="Tqn-aU-cQA"/>
+                            <constraint firstItem="2Cz-Ca-bF6" firstAttribute="top" secondItem="VIn-mq-5f3" secondAttribute="bottom" constant="10" id="WnL-tc-K4b"/>
+                            <constraint firstItem="CFa-GC-yrz" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="ZVK-ED-UN6"/>
+                            <constraint firstItem="17N-1C-dEC" firstAttribute="top" secondItem="Izx-gh-f06" secondAttribute="bottom" constant="20" id="Zz8-9k-n4s"/>
+                            <constraint firstItem="IK4-NF-daS" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="a71-gm-hYU"/>
+                            <constraint firstItem="QwV-Eh-lPv" firstAttribute="top" secondItem="1fm-77-Da2" secondAttribute="bottom" constant="20" id="c5A-BF-Aiy"/>
+                            <constraint firstAttribute="bottom" secondItem="LdN-Sc-bqY" secondAttribute="bottom" constant="20" id="deN-1I-4yu"/>
+                            <constraint firstItem="17N-1C-dEC" firstAttribute="leading" secondItem="b9d-x1-bv7" secondAttribute="leading" id="g4g-Wf-2A7"/>
+                            <constraint firstItem="CFa-GC-yrz" firstAttribute="top" secondItem="2Cz-Ca-bF6" secondAttribute="bottom" constant="20" id="gxU-1z-zFJ"/>
+                            <constraint firstItem="BqX-dW-OxM" firstAttribute="top" secondItem="6kU-QI-Uw2" secondAttribute="bottom" constant="20" id="gxt-Sl-TJR"/>
+                            <constraint firstItem="2Cz-Ca-bF6" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="hr8-od-lgQ"/>
+                            <constraint firstItem="2Pf-cK-gNR" firstAttribute="top" secondItem="IK4-NF-daS" secondAttribute="bottom" constant="20" id="iJO-pM-caM"/>
+                            <constraint firstItem="Izx-gh-f06" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="kiR-Qa-Abc"/>
+                            <constraint firstItem="gLY-5G-VFW" firstAttribute="top" secondItem="BqX-dW-OxM" secondAttribute="bottom" constant="10" id="leu-aL-rw0"/>
+                            <constraint firstItem="1fm-77-Da2" firstAttribute="top" secondItem="2Pf-cK-gNR" secondAttribute="bottom" constant="10" id="loc-Ft-dgO"/>
+                            <constraint firstItem="IK4-NF-daS" firstAttribute="leading" secondItem="CFa-GC-yrz" secondAttribute="leading" id="mVq-3r-q8u"/>
+                            <constraint firstItem="6kU-QI-Uw2" firstAttribute="centerX" secondItem="xJg-RR-1od" secondAttribute="centerX" id="rAL-MJ-el8"/>
+                            <constraint firstItem="IK4-NF-daS" firstAttribute="top" secondItem="CFa-GC-yrz" secondAttribute="bottom" constant="10" id="xkd-pv-rz1"/>
+                            <constraint firstItem="QeS-zP-U8N" firstAttribute="top" secondItem="b9d-x1-bv7" secondAttribute="bottom" constant="10" id="xrq-Ku-nJE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedback1" destination="QeS-zP-U8N" id="X9p-Vh-xLn"/>
+                        <outlet property="feedback11" destination="2Cz-Ca-bF6" id="kGG-a8-BaA"/>
+                        <outlet property="feedback2" destination="IK4-NF-daS" id="ILT-8u-wXy"/>
+                        <outlet property="feedback3" destination="1fm-77-Da2" id="0LF-pV-43s"/>
+                        <outlet property="feedback4" destination="qs4-TF-pEC" id="0YB-Wf-AKA"/>
+                        <outlet property="feedback5" destination="Izx-gh-f06" id="bXp-Pr-DU8"/>
+                        <outlet property="feedback6" destination="6kU-QI-Uw2" id="Tgc-HQ-vgf"/>
+                        <outlet property="feedback7" destination="gLY-5G-VFW" id="TqB-aa-tGp"/>
+                    </connections>
+                </viewController>
+                <customObject id="Rm9-ru-ZWF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="2751"/>
         </scene>
         <!--Instruction View Controller-->
         <scene sceneID="MmX-Wp-pwP">
@@ -1905,7 +2258,13 @@ OK버튼을 누르면 휴식에 참여하게 됩니다.
                     </view>
                     <connections>
                         <outlet property="backView" destination="ZFM-TH-DdT" id="uog-b4-5gO"/>
+                        <outlet property="button1" destination="kbj-Nb-7rB" id="0gR-Vq-utp"/>
+                        <outlet property="button2" destination="R9s-gA-aZr" id="mL1-Z8-B2I"/>
+                        <outlet property="button3" destination="Wa1-gD-G9b" id="YTM-UK-vdj"/>
+                        <outlet property="descriptionLabel" destination="dsG-5V-Yq1" id="Eob-aG-Smp"/>
+                        <outlet property="logoView" destination="EBF-AH-Hle" id="GO6-pb-tcZ"/>
                         <outlet property="midView" destination="rt1-CA-lna" id="Uia-tk-zQg"/>
+                        <outlet property="titleLabel" destination="Vn6-zY-4Nh" id="Ox7-AG-ENz"/>
                     </connections>
                 </viewController>
                 <customObject id="U4Q-C8-8Ru" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2030,6 +2389,14 @@ OK버튼을 누르면 휴식에 참여하게 됩니다.
                             <constraint firstItem="P7c-XD-z61" firstAttribute="centerY" secondItem="FHE-VB-BiI" secondAttribute="centerY" id="zqX-aP-6oY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="FHE-VB-BiI" id="iDg-5A-2Oz"/>
+                        <outlet property="button2" destination="02b-FI-moP" id="2CP-VJ-6Kj"/>
+                        <outlet property="button3" destination="P7c-XD-z61" id="0fq-uQ-79K"/>
+                        <outlet property="descriptionLabel" destination="aNg-QE-LOY" id="h77-o5-WC9"/>
+                        <outlet property="logoView" destination="4MC-Ww-gpa" id="ern-Z1-PBK"/>
+                        <outlet property="titleLabel" destination="kbE-Cy-pek" id="GAe-Bi-kvz"/>
+                    </connections>
                 </viewController>
                 <customObject id="Ugs-0b-8JF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2219,7 +2586,12 @@ OK버튼을 누르면 휴식에 참여하게 됩니다.
                     </view>
                     <connections>
                         <outlet property="backView" destination="SYT-RU-K7b" id="4EV-nZ-ZQG"/>
+                        <outlet property="button1" destination="0bW-PB-chk" id="HLq-jI-zak"/>
+                        <outlet property="button2" destination="j5m-Uw-gI5" id="tDN-K9-IGP"/>
+                        <outlet property="button3" destination="ec7-3R-9Xp" id="A8k-59-rJX"/>
+                        <outlet property="logoView" destination="O6o-gc-EbX" id="0oZ-aq-RV9"/>
                         <outlet property="midView" destination="DP0-58-Cog" id="1oa-ur-jBH"/>
+                        <outlet property="titleLabel" destination="Zzb-b0-9oq" id="kfN-ex-Lcq"/>
                     </connections>
                 </viewController>
                 <customObject id="L9e-vr-yRQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2232,5 +2604,6 @@ OK버튼을 누르면 휴식에 참여하게 됩니다.
         <image name="dot" width="4318" height="2606"/>
         <image name="main_logo" width="550" height="550"/>
         <image name="man" width="1500" height="1500"/>
+        <image name="money" width="194" height="120"/>
     </resources>
 </document>

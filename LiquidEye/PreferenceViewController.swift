@@ -11,8 +11,11 @@ import macOSThemeKit
 
 class PreferenceViewController: NSViewController, NSTextFieldDelegate {
     
+    let dateFormatter = DateFormatter()
+    let todayDateFormatter = DateFormatter()
     
     func setPrevious() {
+        idField.stringValue = preset.identifier
         frequencyButton0.state = (preset.frequency == 0) ? .on:.off
         frequencyButton1.state = (preset.frequency == 1) ? .on:.off
         frequencyButton2.state = (preset.frequency == 2) ? .on:.off
@@ -64,6 +67,7 @@ class PreferenceViewController: NSViewController, NSTextFieldDelegate {
         botButton3.state = (preset.character == 3) ? .on:.off
     }
     
+    @IBOutlet weak var idField: NSTextField!
     @IBOutlet weak var frequencyButton0: NSButton!
     @IBOutlet weak var frequencyButton1: NSButton!
     @IBOutlet weak var frequencyButton2: NSButton!
@@ -80,10 +84,16 @@ class PreferenceViewController: NSViewController, NSTextFieldDelegate {
     
     @IBOutlet weak var visualCueButton: NSButton!
     @IBAction func visualCueButtonClicked(_ sender: NSButton) {
+        if visualCueButton.state == .off && messageButton.state == .off {
+            visualCueButton.state = .on
+        }
     }
     
     @IBOutlet weak var messageButton: NSButton!
     @IBAction func messageButtonClicked(_ sender: NSButton) {
+        if visualCueButton.state == .off && messageButton.state == .off {
+            visualCueButton.state = .on
+        }
     }
     
     @IBOutlet weak var sizeButton0: NSButton!
@@ -174,6 +184,8 @@ class PreferenceViewController: NSViewController, NSTextFieldDelegate {
         perTextField.delegate = self
         intervalTextField.delegate = self
         
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        todayDateFormatter.dateFormat = "yyyy-MM-dd"
     }
     override func viewDidAppear() {
         setPrevious()
@@ -181,16 +193,19 @@ class PreferenceViewController: NSViewController, NSTextFieldDelegate {
     
     @IBAction func closePopupClicked(_ sender: NSButton) {
         self.view.window?.close()
-        
     }
     
     @IBAction func saveClicked(_ sender: NSButton) {
+        preset.time = dateFormatter.string(from: Date())
+        preset.identifier = idField.stringValue
+        
         if frequencyButton0.state == .on {
             preset.frequency = 0
         } else if frequencyButton1.state == .on {
             preset.frequency = 1
         } else {
             preset.frequency = 2
+            preset.customFrequencyPerMinute = Int(perTextField.stringValue) ?? 20
             preset.customFrequencyInterval = Int(intervalTextField.stringValue) ?? 20
             preset.timeType = timeTypeButton.indexOfSelectedItem
         }
@@ -254,8 +269,17 @@ class PreferenceViewController: NSViewController, NSTextFieldDelegate {
         if preset.restColor == 0 {
             ThemeManager.darkTheme.apply()
         } else {
-            
             ThemeManager.lightTheme.apply()
         }
+        
+        print(preset)
+        sendPreference()
+        
+        
+        let feedbackWindowController = NSStoryboard(name: "Main", bundle: nil).instantiateController(withIdentifier: "feedbackwindow") as? NSWindowController
+        feedbackWindowController!.showWindow(nil)
+        feedbackWindowController!.window?.makeKeyAndOrderFront(nil)
+        
+        view.window?.close()
     }
 }

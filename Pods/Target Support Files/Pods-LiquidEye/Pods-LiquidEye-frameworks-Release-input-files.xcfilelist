@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-LiquidEye/Pods-LiquidEye-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Repeat/Repeat.framework
 ${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/macOSThemeKit/macOSThemeKit.framework

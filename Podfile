@@ -9,4 +9,6 @@ target 'LiquidEye' do
   pod 'Repeat'
   pod 'SwiftDate'
   pod 'macOSThemeKit'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
 end
