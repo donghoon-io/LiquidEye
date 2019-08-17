@@ -54,6 +54,18 @@ struct Click: Codable {
     }
 }
 
+struct Usage: Codable {
+    var identifier = "P01"
+    var time = "2018-09-09 11:11:11"
+    var interval = 30 //초
+    var todayTotalTime = 30 //초
+    var todayDoneFrequency = 10 //횟수
+    var todayTotalFrequency = 100 //횟수
+    
+    init() {
+    }
+}
+
 struct Preference: Codable {
     var identifier = "P01" //PXX
     var time = "2018-09-09 11:11:11" //sending time
@@ -153,8 +165,60 @@ var preset: Preference {
     }
 }
 
+
+func sendUsage() {
+    let todayDateFormatter = DateFormatter()
+    todayDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    let url = "http://18.191.148.80:8080/sendUsage"
+    let encoder = JSONEncoder()
+    encoder.outputFormatting = .prettyPrinted
+    do {
+        var usage = Usage()
+        usage.identifier = preset.identifier
+        usage.time = todayDateFormatter.string(from: Date())
+        switch preset.frequency {
+        case 0:
+            usage.interval = 20
+        case 1:
+            usage.interval = 600
+        default:
+            if preset.timeType == 0 {
+                usage.interval = preset.customFrequencyInterval
+            } else {
+                usage.interval = preset.customFrequencyInterval * 60
+            }
+        }
+        usage.todayDoneFrequency = getTodayQuantity(isAchieved: true)
+        usage.todayTotalFrequency = getTodayQuantity(isAchieved: true)
+        usage.todayTotalTime = getTodayTime()
+        let jsonData = try encoder.encode(usage)
+        if let jsonString = String(data: jsonData, encoding: .utf8) {
+            let contentToAppend = jsonString+",\n"
+            let filePath = NSHomeDirectory() + "/Documents/usage_" + dateFormatter.string(from: Date())
+            if let fileHandle = FileHandle(forWritingAtPath: filePath) {
+                fileHandle.seekToEndOfFile()
+                fileHandle.write(contentToAppend.data(using: .utf8) ?? Data())
+            }
+            else {
+                do {
+                    try contentToAppend.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
+                } catch {
+                    print("Error creating \(filePath)")
+                }
+            }
+            print(jsonString)
+            Alamofire.request(url, method: .post, parameters: JSON(parseJSON: jsonString).dictionaryObject, encoding: JSONEncoding.default).responseJSON { (js) in
+                print(js)
+            }
+        }
+    } catch {
+        print(error.localizedDescription)
+    }
+}
+
 func sendPreference() {
-    
     let todayDateFormatter = DateFormatter()
     todayDateFormatter.dateFormat = "yyyy-MM-dd"
     let url = "http://18.191.148.80:8080/preferenceChange"
@@ -351,6 +415,7 @@ func updateTodayTime() {
     }
     print(todayQuantity)
 }
+
 func getTodayTime() -> Int {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"

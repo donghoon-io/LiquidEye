@@ -23,6 +23,10 @@ class InProgressViewController: NSViewController {
         case (false, true):
             switchView(id: "DoneViewController", self)
         default:
+            updateTodayQuantity(isAchieved: true)
+            updateTodayTime()
+            print(getTodayTime())
+            sendUsage()
             self.view.window?.close()
         }
     }
@@ -34,12 +38,6 @@ class InProgressViewController: NSViewController {
         case (false, false):
             nextButton.title = "휴식 끝내기"
         default:
-            nextButton.title = "다음"
-        }
-        
-        if preset.isAccomplishment && !preset.isCompliment {
-            nextButton.title = "휴식 끝내기"
-        } else {
             nextButton.title = "다음"
         }
         

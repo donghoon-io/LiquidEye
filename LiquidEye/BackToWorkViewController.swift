@@ -27,6 +27,7 @@ class BackToWorkViewController: NSViewController {
         updateTodayQuantity(isAchieved: true)
         updateTodayTime()
         print(getTodayTime())
+        sendUsage()
         
         explanationLabel.isHidden = !preset.isAccomplishmentMessage
         

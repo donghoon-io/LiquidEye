@@ -14,6 +14,13 @@ class DoneViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if !preset.isAccomplishment {
+            updateTodayQuantity(isAchieved: true)
+            updateTodayTime()
+            print(getTodayTime())
+            sendUsage()
+        }
+        
         if #available(OSX 10.12, *) {
             timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in
                 self.view.window?.close()
