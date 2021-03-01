@@ -1,6 +1,6 @@
 ## LiquidEye
 
-LiquidEye is an MacOS-based intervention application that aim to prevent users' ocular issues while using a computer. LiquidEye is published as [Journal of Medical Internet Research paper](https://doi.org/10.2196/22099).
+LiquidEye is an MacOS-based intervention application that aim to prevent users' ocular issues while using a computer. LiquidEye is published to [Journal of Medical Internet Research](https://doi.org/10.2196/22099)
 
 ### Installation
 
