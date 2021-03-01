@@ -7,9 +7,8 @@ LiquidEye is an MacOS-based intervention application that aim to prevent users' 
 Make sure your environment satisfies Xcode 10.0 & Swift 4.0. This application is targeted to MacOS >= 10.14 (Mojave).
 
 1. Clone repository
-2. Add Google Firebase auth file
-3. Install dependencies with `pod install` using [CocoaPods](https://cocoapods.org/)
-4. Build using Xcode
+2. Install dependencies with `pod install` using [CocoaPods](https://cocoapods.org/)
+3. Build using Xcode
 
 ### References
 
