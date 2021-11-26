@@ -1,6 +1,6 @@
 ## LiquidEye
 
-[![DOI:10.2196/22099](https://zenodo.org/badge/DOI/10.2196/22099.svg)](https://doi.org/10.2196/22099)
+[![DOI:10.2196/22099](https://badgen.net/badge/DOI/10.2196%2F22099/blue)](https://doi.org/10.2196/22099)
 
 LiquidEye is an MacOS-based intervention application that aims to induce users to prevent prolonged use of computer and subsequent ocular issues. LiquidEye is published to [Journal of Medical Internet Research](https://doi.org/10.2196/22099).
 
